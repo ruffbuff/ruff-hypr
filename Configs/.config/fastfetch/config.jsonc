@@ -14,7 +14,7 @@
         },
         {
             "type": "custom",
-            "format": "┌──────────────────────────────────────────┐"
+            "format": "┌──────────────────────────────────────────────────┐"
         },
         {
             "type": "os",
@@ -25,12 +25,13 @@
             "type": "kernel",
             "key": "   Kernel",
             "keyColor": "red"
-        },
-        {
-            "type": "packages",
-            "key": "   Packages",
-            "keyColor": "green"
-        },
+	},
+	{
+	    "type": "packages",
+	    "key": "   Packages",
+	    "keyColor": "green",
+	    "format": "{pacman} (pacman),\n                                                 {flatpak-system} (flatpak-system),\n                                                 {flatpak-user} (flatpak-user)"
+	},
         {
             "type": "display",
             "key": "   Display",
@@ -48,7 +49,7 @@
         },
         {
             "type": "custom",
-            "format": "└──────────────────────────────────────────┘"
+            "format": "└──────────────────────────────────────────────────┘"
         },
         "break",
         {
@@ -57,7 +58,7 @@
         },
         {
             "type": "custom",
-            "format": "┌──────────────────────────────────────────┐"
+            "format": "┌──────────────────────────────────────────────────┐"
         },
         {
             "type": "cpu",
@@ -95,7 +96,7 @@
         },
         {
             "type": "custom",
-            "format": "└──────────────────────────────────────────┘"
+            "format": "└──────────────────────────────────────────────────┘"
         },
 	{
             "type": "colors",

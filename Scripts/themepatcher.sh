@@ -95,6 +95,8 @@ else
             exit 1
         fi
     fi
+
+    Hyde theme import "Pixel Dream" "https://github.com/rishav12s/Pixel-Dream"
 fi
 
 print_prompt "Patching" -g " --// ${Fav_Theme} //-- "  "from " -b "${Theme_Dir}\n"
@@ -115,9 +117,9 @@ while IFS= read -r fchk; do
         print_prompt -y "[!!] " "${fchk} --> do not exist in ${Theme_Dir}/Configs/"
     fi
 done <<< "$config"
-if [ -f "${Fav_Theme_Dir}/theme.dcol" ];then
-print_prompt -n "[ok] "  "found theme.dcol to override wallpaper dominant colors"
-restore_list+="Y|Y|\${HOME}/.config/hyde/themes/${Fav_Theme}|theme.dcol|hyprland\n"
+if [ -f "${Fav_Theme_Dir}/theme.dcol" ]; then
+    print_prompt -n "[ok] "  "found theme.dcol to override wallpaper dominant colors"
+    restore_list+="Y|Y|\${HOME}/.config/hyde/themes/${Fav_Theme}|theme.dcol|hyprland\n"
 fi
 readonly restore_list
 
