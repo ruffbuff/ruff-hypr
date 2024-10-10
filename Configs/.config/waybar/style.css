@@ -4,7 +4,7 @@
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
     font-size: 10px;
-    min-height: 10px;
+    min-height: 12px;
 }
 
 @import "theme.css";
@@ -16,15 +16,15 @@ window#waybar {
 tooltip {
     background: @main-bg;
     color: @main-fg;
-    border-radius: 7px;
+    border-radius: 0px;
     border-width: 0px;
 }
 
 #workspaces button {
     box-shadow: none;
 	text-shadow: none;
-    padding: 0px;
-    border-radius: 9px;
+    padding: 3px;
+    border-radius: 3px;
     margin-top: 3px;
     margin-bottom: 3px;
     margin-left: 0px;
@@ -57,7 +57,7 @@ tooltip {
     box-shadow: none;
 	text-shadow: none;
     padding: 0px;
-    border-radius: 9px;
+    border-radius: 0px;
     margin-top: 3px;
     margin-bottom: 3px;
     margin-left: 0px;
@@ -97,6 +97,7 @@ tooltip {
 #backlight,
 #battery,
 #bluetooth,
+#custom-cava,
 #custom-cliphist,
 #clock,
 #custom-cpuinfo,
@@ -110,6 +111,7 @@ tooltip {
 #network,
 #custom-notifications,
 #custom-power,
+#privacy,
 #pulseaudio,
 #custom-spotify,
 #taskbar,
@@ -132,21 +134,47 @@ tooltip {
     margin: 4px 0px 4px 0px;
     padding-left: 4px;
     padding-right: 4px;
+    border-radius: 6px;
+}
+
+#network {
+    background: @purple-bg;
+    color: @wb-act-fg;
+}
+
+#bluetooth {
+    background: @red-bg;
+    color: @wb-act-fg;
+}
+
+#pulseaudio {
+    background: @green-bg;
+    color: @wb-act-fg;
+}
+
+#language {
+    background: @blue-bg;
+    color: @wb-act-fg;
+}
+
+#custom-power {
+    background: @orange-bg;
+    color: @wb-act-fg;
 }
 
 #workspaces,
 #taskbar {
-    padding: 0px;
+    padding: 3px;
 }
 
 #custom-r_end {
-    border-radius: 0px 21px 21px 0px;
+    border-radius: 0px;
     margin-right: 9px;
     padding-right: 3px;
 }
 
 #custom-l_end {
-    border-radius: 21px 0px 0px 21px;
+    border-radius: 0px;
     margin-left: 9px;
     padding-left: 3px;
 }
@@ -164,13 +192,13 @@ tooltip {
 }
 
 #custom-rr_end {
-    border-radius: 0px 7px 7px 0px;
+    border-radius: 0px;
     margin-right: 9px;
     padding-right: 3px;
 }
 
 #custom-rl_end {
-    border-radius: 7px 0px 0px 7px;
+    border-radius: 0px;
     margin-left: 9px;
     padding-left: 3px;
 }

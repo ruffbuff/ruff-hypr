@@ -1,10 +1,21 @@
 @define-color bar-bg rgba(0, 0, 0, 0);
 
-@define-color main-bg #11111b;
-@define-color main-fg #cdd6f4;
+@define-color main-bg #282828;
+@define-color main-fg #ebdbb2;
 
-@define-color wb-act-bg #a6adc8;
-@define-color wb-act-fg #313244;
+@define-color wb-act-bg #d79921;
+@define-color wb-act-fg #282828;
 
-@define-color wb-hvr-bg #f5c2e7;
-@define-color wb-hvr-fg #313244;
+@define-color wb-hvr-bg #fabd2f;
+@define-color wb-hvr-fg #282828;
+
+@define-color orange-bg #e86100;
+@define-color purple-bg #ba55d3;
+@define-color red-bg #ff4500;
+@define-color blue-bg #1e90ff;
+@define-color green-bg #32cd32;
+
+* {
+    font-family: "Miracode";
+}
+
